@@ -11,7 +11,7 @@ def test_median_odd():
     ]
     report = MedianCoffeeReport()
     result = report.generate(data)
-    assert result["A"] == 200  # медиана нечётного количества
+    assert result["A"] == 200
 
 def test_median_even():
     data = [
@@ -20,7 +20,7 @@ def test_median_even():
     ]
     report = MedianCoffeeReport()
     result = report.generate(data)
-    assert result["A"] == 150  # медиана чётного количества
+    assert result["A"] == 150
 
 def test_sorted_desc():
     data = [

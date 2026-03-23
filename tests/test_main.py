@@ -17,11 +17,10 @@ import sys
     ]
 )
 def test_main_combinations(monkeypatch, capsys, tmp_path, argv, expect_exit, expect_err):
-    # создаём валидный CSV
+
     valid_file = tmp_path / "valid.csv"
     valid_file.write_text("student,coffee_spent\nA,100\n")
 
-    # заменяем argv для теста
     monkeypatch.setattr(
         sys,
         "argv",
